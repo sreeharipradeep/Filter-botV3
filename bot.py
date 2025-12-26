@@ -19,14 +19,14 @@ async def start(client, message):
 
     buttons = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("🎬 Trixel Movie Group", url="https://t.me/TRIXEL_MOVIE")],
-            [InlineKeyboardButton("➕ Add Me To Your Group", url="https://t.me/YourBotUserName?startgroup=true")],
-            [InlineKeyboardButton("📸 Instagram", url="https://instagram.com/your_instagram_id")],
+            [InlineKeyboardButton("🎬 Trixel Movie Group", url="https://t.me/trixel_movies")],
+            [InlineKeyboardButton("➕ Add Me To Your Group", url="@tony_stark_v3_bot?startgroup=true")],
+            [InlineKeyboardButton("📸 Instagram", url="https://www.instagram.com/sreehari_._pradeep?igsh=YWMzMzRzZWx2dWFy")],
             [InlineKeyboardButton("ℹ️ About Bot", callback_data="about_bot")]
         ]
     )
 
-    images = ["start1.jpg", "start2.jpg", "start3.jpg"]
+    images = ["https://graph.org/file/62386b57bf0394d7bd917-959daf5976f788890f.jpg", "https://graph.org/file/45f2868f0396506971dd4-319c9643069396cfbb.jpg", "https://graph.org/file/1d87e8717b0675ac15730-c491930774a108b163.jpg"]
     selected_image = random.choice(images)
 
     await message.reply_photo(
